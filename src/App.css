@@ -2,10 +2,54 @@
 
 .App {
   font-family: 'Raleway', sans-serif;
-  text-align: center;
   width: 100%;
   height: 85vh;
-  padding-top: 8%;
+}
+
+.drinks {
+  width: 80%;
+  height: 85vh;
+  margin: auto;  
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 0px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+}
+
+.drink-card {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #E7E7E7;
+  padding: 5px;
+}
+
+.drink-img {
+  border: 2px solid #E7E7E7;
+  border-radius: 50%;
+  margin: 20px;
+  width: 125px;
+}
+
+.drink-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30pt;
+  font-weight: 700;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.drink-detail {
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16pt;
+  margin-left: 30px;
+}
+
+.search {
+  width: 98%;
+  margin: auto;
 }
 
 /*#f38553*/

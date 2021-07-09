@@ -29,7 +29,23 @@ function App() {
 
   return (
     <div className="App">
-      Content!
+      <h1>▲ mixup ▼</h1>
+      <div className="drinks">
+        { 
+          Object.entries(data)
+            .map(([key, drink]) => 
+              <div className="drink-card" key={drink.idDrink}>
+                <div>
+                  <img className="drink-img" src={drink.strDrinkThumb} alt={"drink "+ drink.strDrink}/>
+                </div>
+                <div className="drink-info">
+                  <div className="drink-name">{drink.strDrink} {drink.lastName}</div>
+                  <div className="drink-detail">ID # {drink.idDrink}</div>
+                </div>
+              </div>
+            )
+        }
+      </div>
     </div>
   );
 }
