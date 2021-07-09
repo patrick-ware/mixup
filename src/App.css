@@ -33,6 +33,7 @@
 }
 
 .drink-name {
+  color: #2a2a2a;
   font-family: 'Raleway', sans-serif;
   font-size: 30pt;
   font-weight: 700;
@@ -52,5 +53,16 @@
   margin: auto;
 }
 
+
+.search-bar {
+  border: none;
+  border-bottom: 1px solid #a9a9a9;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size:18pt;
+  margin: 5px;
+  padding: 15px 0px 10px 0px;
+  width: 98%;
+}
 /*#f38553*/
 /*#99d3c8*/

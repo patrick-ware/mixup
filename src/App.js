@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
   const [data, setData]= useState([]);
+  const [searchDrink, setSearchDrink]= useState("");
 
   // fetch data from API
   function doFetch(){
@@ -24,13 +25,36 @@ function App() {
       });
    }
 
+  // set searched drink value
+  function getSearchDrinkValue(ev){
+    if (ev.key === "Enter"){ 
+      ev.preventDefault();
+    }
+    setSearchDrink(ev.target.value);
+  }
+
+
   // useEffect hooks
   useEffect(doFetch,[])
 
   return (
     <div className="App">
-      <h1>▲ mixup ▼</h1>
+      <div className="title-bar">
+        <h1>▲ mixup ▼</h1>
+      </div>
       <div className="drinks">
+        <div className="search">
+          <form>
+            <input
+              className="search-bar" 
+              type="text"
+              placeholder="Search by drink name"
+              value={searchDrink}
+              onChange={getSearchDrinkValue}
+            >
+            </input>
+          </form>
+        </div>
         { 
           Object.entries(data)
             .map(([key, drink]) => 
