@@ -23,6 +23,11 @@
   flex-direction: row;
   border-bottom: 1px solid #E7E7E7;
   padding: 5px;
+  transition: 0.2s;
+}
+
+.drink-card:hover {
+  background-color: #efefef;
 }
 
 .drink-img {
