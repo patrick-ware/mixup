@@ -63,7 +63,14 @@ function App() {
                   <img className="drink-img" src={drink.strDrinkThumb} alt={"drink "+ drink.strDrink}/>
                 </div>
                 <div className="drink-info">
-                  <a className="drink-name" href={"www.thecocktaildb.com/api/json/v1/1/search.php?s="+drink.strDrink} target="_blank">{drink.strDrink}</a>
+                  <a 
+                    className="drink-name" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    href={"https://www.thecocktaildb.com/api/json/v1/1/search.php?s="+drink.strDrink}
+                  >
+                    {drink.strDrink}
+                  </a>
                   <div className="drink-detail">ID # {drink.idDrink}</div>
                 </div>
               </div>
