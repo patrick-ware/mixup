@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <div className="title-bar">
-        <h1>▲ mixup ▼</h1>
+        <span className="title">▲ mixup ▼</span>
       </div>
       <div className="drinks">
         <div className="search">
@@ -63,7 +63,7 @@ function App() {
                   <img className="drink-img" src={drink.strDrinkThumb} alt={"drink "+ drink.strDrink}/>
                 </div>
                 <div className="drink-info">
-                  <div className="drink-name">{drink.strDrink} {drink.lastName}</div>
+                  <a className="drink-name" href={"www.thecocktaildb.com/api/json/v1/1/search.php?s="+drink.strDrink} target="_blank">{drink.strDrink}</a>
                   <div className="drink-detail">ID # {drink.idDrink}</div>
                 </div>
               </div>

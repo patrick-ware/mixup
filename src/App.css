@@ -6,10 +6,22 @@
   height: 85vh;
 }
 
+.title-bar {
+  background-color: #f38553;
+  padding: 5px 0px 5px 50px;
+}
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24pt;
+  font-weight: 700;
+}
+
 .drinks {
   width: 80%;
   height: 85vh;
-  margin: auto;  
+  margin: auto;
+  margin-top: 20px;  
   background-color: white;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -44,6 +56,7 @@
   font-weight: 700;
   padding-bottom: 10px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .drink-detail {
